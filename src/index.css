@@ -2,6 +2,9 @@
 @plugin "daisyui";
 
 .active{
-  color: blue;
+  color:  #00ff94;
   text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
 }
