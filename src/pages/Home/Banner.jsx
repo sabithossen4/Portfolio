@@ -19,15 +19,13 @@ import { useInView } from "react-intersection-observer";
 
 import { IoMdContacts } from "react-icons/io";
 import { SiMongodb, SiTailwindcss } from "react-icons/si";
-import { useNavigate } from "react-router";
 import GlowingButton from "../../Utilities/GlowingButton";
 import SocialCircleButton from "../../Utilities/SocilaCircleButton";
 
 
 const Banner = () => {
 const primaryColor = "#00ff94";
-  const grayColor = "#6b7280";
-  const navigate = useNavigate();
+  const grayColor = "#6b7280";  
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -221,7 +219,7 @@ const primaryColor = "#00ff94";
                   icon={FaLinkedin}
                   onClick={() =>
                     window.open(
-                      "https://linkedin.com/in/yourusername",
+                      "https://linkedin.com",
                       "_blank",
                     )
                   }
@@ -230,7 +228,7 @@ const primaryColor = "#00ff94";
                 <SocialCircleButton
                   icon={FaWhatsapp}
                   onClick={() =>
-                    window.open("https://wa.me/yournumber", "_blank")
+                    window.open("https://wa.me/+8801911274560", "_blank")
                   }
                   glowColor={primaryColor}
                 />

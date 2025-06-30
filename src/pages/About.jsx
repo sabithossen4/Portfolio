@@ -277,7 +277,7 @@ const About = () => {
               },
               {
                 icon: <FaWhatsapp />,
-                link: "https://wa.me/+8801",
+                link: "https://wa.me/+8801911274560",
                 color: "#25d366",
               },
             ].map((social, i) => (

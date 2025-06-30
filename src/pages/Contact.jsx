@@ -1,3 +1,4 @@
+import axios from "axios";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
@@ -79,7 +80,7 @@ const Contact = () => {
     try {
       // Replace with your actual API endpoint
       await axios.post(
-        "http://localhost:3000/contact/email",
+        "https://portfolio-server-zeta-flax.vercel.app/contact/email",
         formData,
       );
       setSubmitStatus("success");
