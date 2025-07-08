@@ -35,8 +35,8 @@ const primaryColor = "#00ff94";
   const handleDownloadCV = () => {
     // Replace with your actual CV download logic
     const link = document.createElement("a");
-    link.href = "/path-to-your-cv.pdf";
-    link.download = "YourName_CV.pdf";
+    link.href = "/Sabit-resume-Ejp.pdf";
+    link.download = "Sabti_Hossen_Resume.pdf";
     link.click();
   };  
 
@@ -219,7 +219,7 @@ const primaryColor = "#00ff94";
                   icon={FaLinkedin}
                   onClick={() =>
                     window.open(
-                      "https://linkedin.com",
+                      "https://linkedin.com/in/sabithossen",
                       "_blank",
                     )
                   }

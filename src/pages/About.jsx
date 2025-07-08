@@ -272,7 +272,7 @@ const About = () => {
               },
               {
                 icon: <FaLinkedin />,
-                link: "https://linkedin.com",
+                link: "https://linkedin.com/in/sabithossen",
                 color: "#0a66c2",
               },
               {

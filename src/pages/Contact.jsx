@@ -34,9 +34,9 @@ const Contact = () => {
     {
       icon: <FiLinkedin className="text-2xl" />,
       title: "LinkedIn",
-      value: "sabitdev",
+      value: "sabithossen",
       color: "#00ff94",
-      link: "https://www.linkedin.com",
+      link: "https://linkedin.com/in/sabithossen",
       isExternal: true,
     },
     {
