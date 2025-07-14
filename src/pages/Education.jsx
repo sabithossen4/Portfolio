@@ -12,11 +12,9 @@ const Education = () => {
   const educationData = [
   {
     icon: <FaUniversity className="text-3xl" />,
-    title: "Bachelor of Arts (Degree Pass Course)",
-    institution: "Govt. Kotalipara College, Gopalganj",
-    details: [
-      { label: "Affiliated With", value: "National University, Bangladesh" },
-      { label: "Department", value: "Humanities" },
+    title: "Bachelor Degree (Pass)",
+    institution: "National University, Bangladesh",
+    details: [      
       { label: "Session", value: "2021" },
       { label: "Current Status", value: "Running" },
     ],
