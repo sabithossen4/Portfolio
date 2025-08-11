@@ -35,8 +35,9 @@ const primaryColor = "#00ff94";
   const handleDownloadCV = () => {
     // Replace with your actual CV download logic
     const link = document.createElement("a");
-    link.href = "https://drive.google.com/file/d/108erQ_2PK5vwTkXB-5fEBOB3TCyUqIhR/view?usp=sharing";
+    link.href = "https://drive.google.com/file/d/17yIEFQZmZqi3J4H35mSjNXl2WqwJDLRG/view?usp=sharing";
     link.download = "Sabti_Hossen_Resume.pdf";
+    link.target = "_blank";
     link.click();
   };  
 

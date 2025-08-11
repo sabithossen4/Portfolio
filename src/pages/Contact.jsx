@@ -230,7 +230,7 @@ const Contact = () => {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-gray-400 mb-2">
+                  <label htmlFor="name" className="block text-white mb-2">
                     Your Name
                   </label>
                   <input
@@ -239,13 +239,14 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    placeholder="Enter Your Name"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00ff94] focus:ring-2 focus:ring-[#00ff94]/50 outline-none transition-all text-white"
+                    className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-[#00ff94] focus:ring-2 focus:ring-[#00ff94]/50 outline-none transition-all text-white"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-gray-400 mb-2">
+                  <label htmlFor="email" className="block text-white mb-2">
                     Your Email
                   </label>
                   <input
@@ -254,12 +255,13 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    placeholder="Enter Your Email"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00d1ff] focus:ring-2 focus:ring-[#00d1ff]/50 outline-none transition-all text-white"
+                    className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-[#00d1ff] focus:ring-2 focus:ring-[#00d1ff]/50 outline-none transition-all text-white"
                   />
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-gray-400 mb-2">
+                  <label htmlFor="subject" className="block text-white mb-2">
                     Subject
                   </label>
                   <input
@@ -268,13 +270,14 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
+                    placeholder="Enter Your Subject"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#00d1ff] focus:ring-2 focus:ring-[#00d1ff]/50 outline-none transition-all text-white"
+                    className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-[#00d1ff] focus:ring-2 focus:ring-[#00d1ff]/50 outline-none transition-all text-white"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-gray-400 mb-2">
+                  <label htmlFor="message" className="block text-white mb-2">
                     Your Message
                   </label>
                   <textarea
@@ -283,8 +286,9 @@ const Contact = () => {
                     rows="5"
                     value={formData.message}
                     onChange={handleChange}
+                    placeholder="Enter Your Message"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-[#a855f7] focus:ring-2 focus:ring-[#a855f7]/50 outline-none transition-all text-white"
+                    className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-[#a855f7] focus:ring-2 focus:ring-[#a855f7]/50 outline-none transition-all text-white"
                   />
                 </div>
 

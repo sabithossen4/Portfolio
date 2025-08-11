@@ -204,9 +204,9 @@ const Experience = () => {
 
                 <ul className="space-y-2 relative z-10">
                   {[
-                    "Developed responsive portfolio with animations",
-                    "Created e-commerce demo with payment integration",
-                    "Built RESTful APIs with JWT authentication",
+                    "Developed a responsive personal portfolio website with animations.",
+                    "Created an e-commerce demo application with payment integration.",
+                    "Developed RESTful APIs with JWT-based authentication",
                   ].map((item, i) => (
                     <motion.li
                       key={i}
