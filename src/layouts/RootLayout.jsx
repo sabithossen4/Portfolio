@@ -45,20 +45,20 @@ const RootLayout = () => {
     ));
 
   return (
-    <div className="drawer drawer-end bg-[#030712]">
+    <div className="drawer drawer-end bg-[#120303]">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
 
       {/* Page content */}
       <div className="drawer-content flex flex-col min-h-screen">
         {/* Navbar */}
-        <div className="navbar bg-base-300 w-full justify-between xl:px-48 py-3 fixed top-0 z-50 shadow-sm border-b-4 rounded-b-2xl border-[#00ff94]">
+        <div className="navbar bg-base-300 w-full justify-between xl:px-48 py-3 fixed top-0 z-50 shadow-sm border-b-4 rounded-b-2xl border-[#00ff94] bg-black text-white">
           <div className="text-lg font-semibold text-accent flex justify-center items-center">
             <FaRegFileCode className="text-[#00ff94] text-xl md:text-2xl font-bold" />
             <Link
               to="/"
               className="text-base-content text-xl md:text-2xl font-bold"
             >
-              Sabit<span className="text-[#00ff94]">.</span>
+              <span className='text-white'>Sabit</span><span className="text-[#00ff94]">.</span>
             </Link>
           </div>
 
@@ -104,13 +104,13 @@ const RootLayout = () => {
       {/* Right-side drawer */}
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-        <div className="w-64 min-h-full bg-base-200 flex flex-col justify-start items-start px-6 py-8">
+        <div className="w-64 min-h-full bg-black  flex flex-col justify-start items-start px-6 py-8">
           <div className="text-2xl font-bold text-[#00ff94] mb-6">
-            Sabit<span className="text-base-content">.</span>
+            Sabit<span className="text-base-content text-white">.</span>
           </div>
 
           {/* Drawer Navigation */}
-          <ul className="menu space-y-2 w-full text-base-content">
+          <ul className="menu space-y-2 w-full text-base-content text-white">
             {renderLinks(closeDrawer)}
           </ul>
         </div>
