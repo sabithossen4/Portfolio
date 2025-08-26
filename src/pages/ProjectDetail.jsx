@@ -100,7 +100,7 @@ const ProjectDetail = () => {
   if (!project) return <div>Project not found</div>;
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-8">
+    <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-950">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -225,27 +225,22 @@ const ProjectDetail = () => {
       </div>
 
       {/* Full Width Home Button */}
-      
-              <Link to="/">
-                 <motion.a
-                id="project"
-                className="gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg md:rounded-xl text-sm sm:text-base md:text-lg font-bold border" 
-                style={{
-                  // borderColor: primaryColor,
-                  // color: primaryColor,
-                }}
-                whileHover={{
-                  backgroundColor: `${primaryColor}10`,
-                  scale: 1.05,
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                
-                
+<Link to="/">
+  <motion.a
+    id="project"
+    className="gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg md:rounded-xl text-sm sm:text-base md:text-lg font-bold border w-full flex justify-center items-center"
+   
+    whileHover={{
+      // backgroundColor: secondaryColor, 
+      scale: 1.05,
+    }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <FiHome size={18} />
+    <span>Home</span>
+  </motion.a>
+</Link>
 
-                <span>Home</span>
-              </motion.a>
-              </Link>
     </div>
   );
 };
