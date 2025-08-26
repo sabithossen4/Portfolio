@@ -6,6 +6,12 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { CiSquareAlert } from "react-icons/ci";
+import { Link } from "react-router";
+
+
+
+
 
 const Project = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -14,6 +20,7 @@ const Project = () => {
 
   const projects = [
     {
+      id: 1,
       name: "Gardening Community",
       description:
         "A full-stack gardening community portal with  integration dashboard with proper information and charts and JWT authentication.",
@@ -43,6 +50,7 @@ const Project = () => {
       ],
     },
     {
+      id:2,
       name: "Doctor Talk",
       description:
         "Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.",
@@ -68,6 +76,7 @@ const Project = () => {
       ],
     },
     {
+      id:3,
       name: "Course Hub",
       description: "A modern fully responsive course searching website project.",
       technologies: ["React", "Tailwind CSS", "DaisyUI", "Firebase"],
@@ -350,6 +359,28 @@ const Project = () => {
                   <span>Server Code</span>
                 </motion.a>
               )}
+
+              <Link to={`/project/${projects[activeProject].id}`}>
+                 <motion.a
+                
+                className="flex items-center gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg md:rounded-xl text-sm sm:text-base md:text-lg font-bold border"
+                style={{
+                  // borderColor: primaryColor,
+                  // color: primaryColor,
+                }}
+                whileHover={{
+                  backgroundColor: `${primaryColor}10`,
+                  scale: 1.05,
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                < CiSquareAlert size={18} className="sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                
+
+                <span>View Details</span>
+              </motion.a>
+              </Link>
+
             </motion.div>
           </div>
         </motion.div>

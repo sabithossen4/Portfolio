@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import Home from "../pages/Home/Home";
 import RootLayout from "../layouts/RootLayout";
+import ProjectDetail from "../pages/ProjectDetail";
+import ProjectLayout from "../layouts/ProjectLayout";
 
 export const router = createBrowserRouter([
   {
@@ -9,8 +11,18 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        Component: Home
-      },      
-    ]
+        Component: Home,
+      },
+    ],
+  },
+  {
+    path: "/project/:id",
+    Component: ProjectLayout,
+    children: [
+      {
+            index: true,
+          Component: ProjectDetail,
+          }, 
+    ],
   },
 ]);

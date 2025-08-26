@@ -12,11 +12,11 @@ const Education = () => {
   const educationData = [
   {
     icon: <FaUniversity className="text-3xl" />,
-    title: "Bachelor Degree (Pass)",
+    title: "Bachelor of Social Science (B.S.S)",
     institution: "National University, Bangladesh",
     details: [      
-      { label: "Session", value: "2021" },
-      { label: "Current Status", value: "Running" },
+      { label: "Session", value: "2021 - Present" },
+      { label: "Status", value: "Running" },
     ],
     year: "2021 - Present",
   },
